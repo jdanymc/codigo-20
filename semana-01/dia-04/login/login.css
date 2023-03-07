@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(https://th.bing.com/th/id/R.a9c30a27350dddc94f32b4d9295cf82b?rik=Fzzj31lUdkTlDA&pid=ImgRaw&r=0);
+  background-size: cover;
+  height: 100vh;
+}
+.login-box {
+  width: 320px;
+  height: 420px;
+  background: #000;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+  border-radius: 10px;
+}
+
+.login-box .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  top: -50%;
+  left: calc(50% - 50%);
+}
+.login-box h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+.login-box label {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+.login-box input {
+  width: 100%;
+  margin-bottom: 20px;
+}

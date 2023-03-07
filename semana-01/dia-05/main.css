@@ -1,0 +1,38 @@
+*{
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-color:blanchedalmond;
+    color:red;
+    font-size: 20px;
+    margin: 40px;
+    border: solid 3px;
+}
+/* h1, h3{
+color: blue;
+}
+
+h2, h4{
+color: blueviolet;
+} */
+.rojo{
+    color: blue;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 3px solid;
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    margin: 50px;
+    padding: 20px;
+}
+
+.azul{
+    color: blueviolet;
+}
+
+#apellido{
+    color: brown;
+
+}
