@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body{
+    height: 2000px;
+}
+.caja-1,
+.caja-2 {
+  width: 100px;
+  height: 100px;
+}
+.caja-1 {
+  border: 1px solid red;
+  left: calc(50% - 50px);
+  /* transform: translate(-50px,0); */
+  position: relative;
+  top: 15px;
+}
+.caja-2 {
+  border: 1px solid purple;
+  position: relative;
+}
+.circulo-2 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.circulo-3 {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: purple;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+.action-button{
+    width: 20px;
+    height: 20px;
+    background-color: aqua;
+    border-radius: 50%;
+    position: fixed;
+    text-align: center;
+    bottom: 20px;
+    right: 20px;
+}

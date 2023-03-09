@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body{
+        padding-bottom: 50px;
+      }
+      .caja-1 {
+        background-color: peru;
+        height: 200px;
+      }
+      .caja-2 {
+        height: 200px;
+        background-color: aqua;
+        background-image: url(./textura.png);
+        /* background-repeat: repeat-x; */
+        background-size: contain;
+      }
+      .caja-3{
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        border-radius: 50%;
+      }
+      .caja-4{
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        border-radius: 50%;
+        overflow: hidden;
+        background-image: url(./textura.png);
+      }
+      .caja-5{
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        border-radius: 50%;
+        overflow: hidden;
+      }
+      .caja-5 img{
+        height: 100%;
+        width: 100%;
+      }
+      input{
+        border:0;
+        border-bottom: 2px solid #233532;
+        border-radius: 8px;
+        padding: 8px 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="caja-1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+      deserunt harum quasi quis fugiat modi in vero nemo laudantium dolorum,
+      alias molestiae saepe, recusandae delectus unde quam necessitatibus fugit
+      impedit!
+    </div>
+    <div class="caja-2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+      deserunt harum quasi quis fugiat modi in vero nemo laudantium dolorum,
+      alias molestiae saepe, recusandae delectus unde quam necessitatibus fugit
+      impedit!
+    </div>
+    <div class="caja-3"></div>
+    <div class="caja-4"></div>
+    <div class="caja-5">
+        <img src="./textura.png" alt="" />
+    </div>
+<input type="text" placeholder="">
+  </body>
+</html>

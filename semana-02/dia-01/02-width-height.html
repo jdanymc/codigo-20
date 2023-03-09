@@ -9,21 +9,68 @@
         *{
             padding: 0;
             margin: 0;
+            box-sizing: border-box;
+        }
+        
+        body{
+            background-color: #ccc;
+            border:  5px solid peru;
+            height: 100vh/*calc(100vh - 10px)*/;
         }
         .caja-1{
             border: 1px solid red;
             width: 200px;
             height: 100px;
+            /*overflow: hidden;
+            overflow: scroll;*/
+           overflow-x: scroll;
+            overflow-y: hidden;
+            word-wrap: break-word;
+
+            
         }
+
+        .caja-3{
+            border: 1px solid red;
+            width: 200px; /* set the width of the div */
+            white-space: nowrap; /* prevent text from wrapping */
+            overflow: hidden; /* hide any overflowing content */
+            text-overflow: ellipsis; /* display an ellipsis (...) to indicate truncated text */
+            
+        }
+
         .span-1{
             border: 1px solid blue;
             width: 200px;
             height: 100px;
         }
+        .caja-2{
+            border: 1px solid white;
+            height: 100px;
+            width: 200px;
+            overflow-x: scroll;
+        }
+        .parrafo-grande{
+            width: 300px;
+        }
     </style>
 </head>
 <body>
-    <div class="caja-1"> algo de contenido</div>
+    <div class="caja-1"> 
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, aspernatur at, autem minus nostrum asperiores veritatis modi commodi cupiditate laboriosam ut maiores dolor. Eveniet in quidem aliquid consequuntur, illo incidunt.
+    </div>
+<hr>
+
+        <div class="caja-3"> 
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, aspernatur at, autem minus nostrum asperiores veritatis modi commodi cupiditate laboriosam ut maiores dolor. Eveniet in quidem aliquid consequuntur, illo incidunt.
+    </div>
+    <hr>
     <span class="span-1">un span</span>
+    <hr>
+    <div class="caja-2">
+        <p class="parrafo-grande">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem vitae, animi totam earum, libero eligendi repellat illo dolores autem maiores omnis nisi dolor voluptas praesentium quae at aperiam distinctio quis.
+        </p>
+    </div>
 </body>
 </html>
