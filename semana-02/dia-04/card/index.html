@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Outfit", sans-serif;
+      }
+      .main {
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: hsl(217, 54%, 11%);
+        height: 100vh;
+      }
+      .card {
+        background-color: hsl(216, 50%, 16%);
+        width: 250px;
+        padding: 20px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        box-shadow: #14273f 0px 0px 20px;
+      }
+      h3 {
+        color: hsl(178, 100%, 50%);
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      h3:hover {
+        cursor: pointer;
+      }
+      .contenido1 {
+        background-image: url(./image-equilibrium.jpg);
+        background-size: 250px;
+        background-position: center;
+        height: 250px;
+        border-radius: 10px;
+        width: 100%;
+      }
+      .contenido1 div {
+        width: 250px;
+        height: 250px;
+        border-radius: 10px;
+        opacity: 0;
+        background-color: aqua;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .contenido1 div:hover {
+        cursor: pointer;
+        opacity: 0.5;
+      }
+      .contenido1 img {
+        width: 40px;
+        opacity: 1;
+      }
+      .contenido2 {
+        color: hsl(215, 51%, 70%);
+        display: block;
+        margin: 10px 0 10px 0;
+      }
+      a {
+        text-decoration: none;
+        color: hsl(178, 100%, 50%);
+      }
+      hr {
+        border: 1px solid hsl(215, 51%, 70%);
+        width: 100%;
+        transform: scaleY(0.1);
+      }
+      .contenido4 {
+        color: hsl(215, 51%, 70%);
+        margin: 10px;
+        display: flex;
+        justify-content: start;
+        flex-direction: row;
+        align-items: center;
+        font-size: 12px;
+        width: calc(100% - 20px);
+      }
+      .contenido3 {
+        display: flex;
+        justify-content: space-between;
+        color: hsl(178, 100%, 50%);
+        margin: 10px;
+        align-items: center;
+        font-size: 12px;
+        width: calc(100% - 20px);
+      }
+      .contenido3 img {
+        height: 15px;
+        margin-right: 5px;
+      }
+      .contenido4 img {
+        height: 20px;
+        margin-right: 10px;
+        border: 1px solid white;
+        border-radius: 50%;
+      }
+      .dia {
+        color: hsl(215, 51%, 70%);
+      }
+      .ethe,
+      .dia {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="card">
+        <div class="contenido1">
+          <div><img src="./icon-view.svg" /></div>
+        </div>
+        <div class="contenido2">
+          <h3>Equilibrium #3429</h3>
+          <p>Our Equilibrium collection promotes balance and calm.</p>
+        </div>
+        <div class="contenido3">
+          <div class="ethe">
+            <div><img src="./icon-ethereum.svg" alt="" /></div>
+            <div>0.041ETH</div>
+          </div>
+          <div class="dia">
+            <div><img src="./icon-clock.svg" alt="" /></div>
+            <div>3 days left</div>
+          </div>
+        </div>
+        <hr />
+        <div class="contenido4">
+          <div><img src="./image-avatar.png" alt="" /></div>
+          <div>Creation of &nbsp;<a href="#">Jules Wyvern</a></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
