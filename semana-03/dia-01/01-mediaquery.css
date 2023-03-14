@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+body {
+  background-color: #458996;
+}
+
+p {
+  color: white;
+}
+li {
+  display: inline-block;
+}
+nav img {
+  display: none;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+}
+.section {
+  width: 25%;
+  border: 1px solid red;
+}
+@media (max-width: 768px) {
+  body {
+    background-color: green;
+  }
+  .section {
+    width: 50%;
+  }
+  li {
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background-color: coral;
+  }
+  .section {
+    width: 100%;
+  }
+  ul {
+    display: none;
+  }
+  nav img {
+    display: inline-block;
+  }
+}
