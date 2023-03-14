@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow-x: hidden;
+}
+/*animación una*/
+.texto-animado {
+  /*una animacion esta compuesta por un nombre y un tiempo*/
+  animation-name: texto-volador;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  border: solid red;
+}
+/* activa animacion con keyframes*/
+/* @keyframes texto-volador {
+    from{
+        margin-left: 100%;
+        width: 300%;
+        background-color: aqua;
+        border: none;
+    }
+    to{
+        margin-left: -100%;
+        background-color: brown;
+        color: white;
+        border: none;
+    }
+} */
+
+.imagen-animada {
+    /*una animacion esta compuesta por un nombre y un tiempo*/
+    /* animation-name: imagen-zoom; */
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    width: 400px;
+    height: 400px;
+  }
+  /* activa animacion con keyframes*/
+   @keyframes imagen-zoom {
+      from{
+          /* transform: scale(3); */
+          width: 20px;
+          height: 20px;
+      }
+      to{
+         
+         
+      }
+  } 
+.box-uno{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    animation-duration: 10s;
+    /* animation-name: box-animation; */
+    animation-iteration-count: infinite;
+}
+@keyframes box-animation {
+    0%{
+        background-color: black;
+    }
+    25%{
+        background-color: sandybrown;
+    }
+    50%{
+        background-color: rgb(34,0,128);
+    }
+    75%{
+        background-color: blueviolet;
+    }
+    100%{
+        background-color: green;
+    }
+}
+
+.box-imagen{
+    height: 400px;
+    width: 400px;
+    background-image: url(../dia-04/foto.webp);
+    background-size: cover;
+    animation-duration: 5s;
+    /* animation-name: box-animation2; */
+    animation-iteration-count: infinite;
+}
+@keyframes box-animation2 {
+    0%{
+        background-image: url(../dia-04/foto.webp);
+    }
+    50%{
+        background-image: url(../dia-04/card/image-avatar.png);
+    }
+   
+    100%{
+        background-image: url(../dia-04/card/image-equilibrium.jpg);
+    }
+}
+.ball-uno{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+    animation-duration: 3s;
+    animation-name: ball-animation; 
+    animation-iteration-count: infinite;
+}
+
+@keyframes ball-animation {
+    0%{
+        transform: translateY(0px);
+    }
+    25%{
+        transform: translate(100px,-300px);
+    }
+    50%{
+        
+        transform: translate(200px,0px);
+    }
+    75%{
+        transform: translate(100px,-300px);
+    }
+    100%{
+        
+        transform: translate(0px,0px);
+    }
+    
+}

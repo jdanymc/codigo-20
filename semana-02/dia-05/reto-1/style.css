@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding: 50px;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  font-size: 24px;
+  margin: 10px 0 10px;
+}
+p {
+  margin: 10px 0 10px;
+  line-height: 26px;
+}
+img {
+  margin: 10px;
+  width: 385px;
+  height: 182px;
+}
+li{
+  font-weight: bold;
+  margin: 20px;
+  font-size: 18px;
+}
+.servicios-list li:nth-child(1){
+  color: 
+  #FF0000;
+}
+.servicios-list li:nth-child(2){
+  color: 
+  #1400FF;
+}
+.servicios-list li:nth-child(3){
+  color: #D79B00
+}
+.servicios-list li:nth-child(4){
+  color: #03B2B2
+}
+.portafolio-list li:nth-child(1){
+  color: #03B2B2
+}
+.portafolio-list li:nth-child(2){
+  color: #AE280B;
+}
+.portafolio-list li:nth-child(3){
+  color: #060564
+}
+.portafolio-list li:nth-child(4){
+  color: 
+  #637300
+}
+
+.home {
+  color: #3b06d2;
+}
+.servicios {
+  color: #d206b2;
+}
+.portafolio {
+  color: #aad206;
+}
