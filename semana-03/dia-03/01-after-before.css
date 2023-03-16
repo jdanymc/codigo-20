@@ -1,0 +1,13 @@
+p::before{
+    content: '';
+    display: block;
+    border: 1px solid red;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+}
+p{
+    background-color: blueviolet;
+}
