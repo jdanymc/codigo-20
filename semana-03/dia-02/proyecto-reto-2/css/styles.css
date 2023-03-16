@@ -92,9 +92,9 @@ ul {
 .main__hero-wrapper {
   background-image: url(./../images/illustration-working.svg);
   background-repeat: no-repeat;
-  background-position: 100% 0;
-  background-size: 50%;
-  padding-bottom: 150px;
+  background-position: 90% 0;
+  background-size: 40%;
+  padding-bottom: 250px;
   margin-left: 2rem;
   margin-right: 2rem;
 }
@@ -260,11 +260,14 @@ h1 {
 .footer__post-fin{
   display: flex;
   justify-content: space-between;
-  padding: 40px 150px;
+  padding: 40px 20px;
+  max-width: var(--width-desktop);
+  margin-left: auto;
+  margin-right: auto;
   
 }
 .post__img{
-  margin-right: 100px;
+  margin-right: 150px;
 }
 .post__img img{
   filter: invert(100%);
