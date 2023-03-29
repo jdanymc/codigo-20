@@ -459,7 +459,6 @@ console.log("Película mas popular: ", nombrePeliculaPopular());
 // ejercicio 3
 
 function nombrePeliculaMasGeneros() {
-  let posicionMG = -1;
   let mayorGenero = 0;
   let peliculasMG = [];
 
