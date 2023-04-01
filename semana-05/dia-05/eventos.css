@@ -1,0 +1,30 @@
+
+
+.calculadora__numeros input{
+    width: 80px;
+    color: beige;
+    background-color: black;
+}
+#numero2{
+    background-color: blue;
+}
+
+.calculadora__operaciones{
+    display: flex;
+    flex-direction: column;
+    width: 20px;
+    padding-left: 80px;
+}
+#resultado{
+    width: 300px;
+    border: 1px solid red;
+    margin-top: 20px;
+    min-height: 20px;
+    padding: 5px;
+}
+.calculadora__resultado{
+    position: relative;
+    top:30px;
+    background-color: aliceblue;
+    display: inline;
+}

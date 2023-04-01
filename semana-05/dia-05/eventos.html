@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./eventos.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Eventos</h1>
+    <!--
+        una forma de poder capturar los eventos de mis elementos
+        esusando los mismos atributos del elemento
+    -->
+    <!-- click funciona con todas las tag html -->
+    <button onclick="alert('hola, bienvenido')">mi primer click</button>
+
+    <!-- evento doble click-->
+    <button ondblclick="alert('hola, bienvenido doble')">
+      mi primer click
+    </button>
+
+    <!-- evento que funciona al pasar el mouse-->
+    <h1 onmouseover="console.log('este es mi clic')">mi segundo click</h1>
+
+    <!-- doble evento en un componente -->
+    <button
+      ondblclick="console.log('evento doble click')"
+      onclick="this.style.color='white'; this.style.backgroundColor='red'"
+    >
+      Evento doble click
+    </button>
+
+    <!--  -->
+    <button onclick="imprimir()">desde JS</button>
+
+    <!-- calculadora -->
+    <div class="calculadora">
+      <h2>Calculadora Básica</h2>
+      <div class="calculadora__numeros">
+      <input type="text" placeholder="Número 1" id="numero1" />
+      <input type="text" placeholder="Número 2" id="numero2" />
+    </div>
+      <div class="calculadora__operaciones">
+        <button onclick="calculadoraHTML('+')">+</button>
+        <button onclick="calculadoraHTML('-')">-</button>
+        <button onclick="calculadoraHTML('*')">*</button>
+        <button onclick="calculadoraHTML('/')">/</button>
+      </div>
+      <h2 class="calculadora__resultado">Resultado</h2>
+      <div
+        id="resultado"        
+      ></div>
+    </div>
+
+    <script src="./operaciones.js"></script>
+    <script src="./eventos.js"></script>
+  </body>
+</html>
