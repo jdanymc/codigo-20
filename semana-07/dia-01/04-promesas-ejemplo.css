@@ -1,4 +1,24 @@
-.card-footer{
-    display: flex;
-    justify-content: space-between;
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+}
+img{
+    max-height: 200px;
+}
+/*
+#contenedor>div{
+    max-height: 500px;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}*/
+
+.card-title{
+    max-height: 100px;
+    text-overflow:ellipsis;
+    overflow:hidden;
+}
+.card-text{
+    max-height: 200px;
+    text-overflow:ellipsis;
+    overflow:hidden;
 }
