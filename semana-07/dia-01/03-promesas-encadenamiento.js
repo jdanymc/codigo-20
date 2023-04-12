@@ -89,3 +89,13 @@ getCategoriaById(id)
   .catch((errorGenerico) => {
     console.log("error generico: ", errorGenerico);
   });
+
+  //forma 3 , en una funcion async usando await
+const caller = async ()=>{
+  const nombreCat = await getCategoriaById(1);
+  const pelis = await getPeliculasByCategoria(nombreCat);
+  return pelis;
+}
+caller().then(data =>{ // then es solo cuando se retorna un valor
+  console.log('pelissssss final: ',data)  
+});
