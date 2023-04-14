@@ -14,14 +14,17 @@
       a {
         text-decoration: none;
       }
-      #img-profile,#github-profile{
+      #img-profile,
+      #github-profile {
         width: 100%;
       }
-     </style>
+    </style>
     <title>Document</title>
   </head>
   <body>
-    <section  class="container vh-100 d-flex align-items-start justify-content-center" >
+    <section
+      class="container vh-100 d-flex align-items-start justify-content-center"
+    >
       <div text-start w-75>
         <h1>GitHub finder</h1>
         <div class="row">
@@ -48,23 +51,22 @@
                 src="https://pbs.twimg.com/media/EmUM83TXIAAss5k.png"
                 alt=""
                 class="rounded-circle card-img-top p-1"
-               
                 id="img-profile"
               />
 
               <div class="card-body">
                 <h3 class="card-title" id="github-name">The OctoCat</h3>
-                <h5 class="" id="github-username">@OctoCat</h5>
+                <h5 class="" id="github-username">OctoCat</h5>
                 <p class="card-text" id="github-bio">bio</p>
                 <a
                   class="btn btn-primary"
                   target="_blank"
-                  href="#"
+                  href="javascript:;"
                   id="github-profile"
                   >Profile</a
                 >
                 <p>
-                  <a class="" href="https://github.com/jdanymc?tab=followers">
+                  <a class="" href="javascript:;" id="link-followers">
                     <svg
                       text="muted"
                       aria-hidden="true"
@@ -80,12 +82,13 @@
                       ></path>
                     </svg>
                     <span id="github-followers" class="">1</span>
-                    follower
+                    followers
                   </a>
                   .
                   <a
                     class="Link--secondary no-underline no-wrap"
-                    href="https://github.com/jdanymc?tab=following"
+                    href="javascript:;"
+                    id="link-following"
                   >
                     <span class="" id="github-following">3</span>
                     following
@@ -124,22 +127,25 @@
               </div>
             </div>
           </div>
-          <div class="col-md-8  p-2">
+          <div class="col-md-8 p-2">
             <ul class="nav nav-tabs">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Principal</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Repositories</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Followers</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link  href="#">Following</a>
-                </li>
-              </ul>
-
+              <li class="nav-item">
+                <a class="nav-link active" href="javascript:;" id="nav-page-repos">Repositories</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:;" id="nav-page-followers">Followers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="javascript:;" id="nav-page-following">Following</a>
+              </li>
+            </ul>
+            <table class="table" id="table-action">
+              <tbody>   
+                <tr><td>aaaaaaaaaaaa</td></tr>            
+                <tr><td>aaaaaaaaaaaa</td></tr>            
+                <tr><td>aaaaaaaaaaaa</td></tr>            
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
