@@ -1,0 +1,17 @@
+.body{
+    background-image: url(./img.png);
+    background: fixed;
+}
+.container{
+    background-color: transparent;
+}
+.c-carta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 30px;
+  padding: 5px;
+  border-radius: 10px;
+  filter: drop-shadow(30px 10px 4px rgba(18, 123, 37, 0.593));
+}
