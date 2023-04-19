@@ -1,14 +1,15 @@
-import Cabecera from './Cabecera';
+import "bootstrap/dist/css/bootstrap.min.css";
+import Cabecera from "./Cabecera";
+import Aside from "./Aside";
+import Principal from "./Principal";
+import "./estilos.css";
 
 function App() {
   return (
     <div>
       <Cabecera />
-      <Cabecera />
-      <Cabecera />
-      <Cabecera />
-      <Cabecera />
-      <h1>Hola Mundo</h1>
+      <Aside />
+      <Principal />
     </div>
   );
 }

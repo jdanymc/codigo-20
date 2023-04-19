@@ -1,0 +1,10 @@
+/*.card{
+    width: 18rem;
+}*/
+.card img {
+  width: auto;
+  max-height: 200px;
+}
+container {
+  max-width: 1200px;
+}
