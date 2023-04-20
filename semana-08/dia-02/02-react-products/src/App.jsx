@@ -1,13 +1,15 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./styles.css";
 import Productos from "./Productos";
-import Header from "./Header";
+import NavBar from "./NavBar";
 
 function App() {
-  return <div className="container">
-    <Header/>
-    <Productos/>
-  </div>;
+  return (
+    <div>
+      <NavBar />
+      <div className="container">
+        <Productos />
+      </div>
+    </div>
+  );
 }
 
 export default App;
