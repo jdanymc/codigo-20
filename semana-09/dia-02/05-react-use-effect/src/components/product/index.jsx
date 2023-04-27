@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import "./style.css";
+import "./styles.css";
 
 const Product = (props) => {
   const { item, agregarAlCarrito } = props;
