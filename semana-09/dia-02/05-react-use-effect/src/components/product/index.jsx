@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import "./styles.css";
-
+import { NavLink } from "react-router-dom";
 const Product = (props) => {
   const { item, agregarAlCarrito } = props;
 
@@ -14,7 +14,9 @@ const Product = (props) => {
         <p className="card-text product-description" title={item.title}>
           {item.description}
         </p>
-        <button className="btn btn-sm btn-primary">Ver producto</button>
+        <NavLink to={`/product/${item.id}`}>
+          <button className="btn btn-sm btn-primary">Ver producto</button>
+        </NavLink>
         <button
           className="btn btn-sm btn-warning"
           onClick={() => agregarAlCarrito(item)}

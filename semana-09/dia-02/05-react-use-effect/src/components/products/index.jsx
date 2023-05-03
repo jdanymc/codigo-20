@@ -1,11 +1,12 @@
 import axios from "axios";
 import { URL_API_STORE } from "../../constants";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import Product from "../product";
 import PropTypes from "prop-types";
+import { UserContext } from "../context/ContextCarrito";
 
-const Products = (props) => {
-  const { agregarAlCarrito } = props;
+const Products = () => {
+  const { agregarAlCarrito } = useContext(UserContext);
   const [productos, setProductos] = useState([]);
   const [limit, setLimit] = useState(5);
   const [loading, setLoading] = useState(true);
@@ -50,7 +51,4 @@ const Products = (props) => {
   );
 };
 
-Products.propTypes = {
-  agregarAlCarrito: PropTypes.func.isRequired,
-};
 export default Products;

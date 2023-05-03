@@ -1,8 +1,9 @@
-import PropTypes from "prop-types";
+import { useContext } from "react";
+import { UserContext } from "../context/ContextCarrito";
 import "./styles.css";
 
-const Cart = (props) => {
-  const { carrito,eliminarDelCarrito } = props;
+const Cart = () => {
+  const { carrito,eliminarDelCarrito } = useContext(UserContext);
   return (
     <ul className="list-group">
       {carrito.map((prod) => (
@@ -27,8 +28,4 @@ const Cart = (props) => {
   );
 };
 
-Cart.propTypes = {
-  carrito: PropTypes.arrayOf(PropTypes.object),
-  eliminarDelCarrito: PropTypes.func.isRequired
-};
 export default Cart;

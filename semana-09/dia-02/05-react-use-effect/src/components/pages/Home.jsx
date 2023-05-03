@@ -1,11 +1,11 @@
-import React, { useContext, useEffect } from "react";
+import { useContext, useEffect } from "react";
 import Products from "../products";
 import Cart from "../cart";
 import { UserContext } from "../context/ContextCarrito";
 
 const Home = () => {
   //1. se usa el custom hook useCarrito para obtener las funciones de las variables
-  const { agregarAlCarrito, carrito, eliminarDelCarrito } =
+  const { carrito } =
     useContext(UserContext);
 
   //2. este useefect se usa para guardar en el localstorage
@@ -21,10 +21,10 @@ const Home = () => {
       <div className="row">
         <div className="col-md-2">Filtrador </div>
         <div className="col-md-7">
-          <Products agregarAlCarrito={agregarAlCarrito} />
+          <Products />
         </div>
         <div className="col-md-3">
-          <Cart carrito={carrito} eliminarDelCarrito={eliminarDelCarrito} />
+          <Cart/>
         </div>
       </div>
     </div>
