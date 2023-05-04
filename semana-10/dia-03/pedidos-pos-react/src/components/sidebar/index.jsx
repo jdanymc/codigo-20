@@ -1,33 +1,21 @@
-import { useContext } from "react"
-import { PageContext } from "../context/data"
-
+import { useContext } from "react";
+import { PageContext } from "../context/data";
 
 const Sidebar = () => {
+  const { categorias, categoriaSel } = useContext(PageContext);
 
-const {data} = useContext(PageContext)
-console.log('data ',data);
   return (
     <nav className="menu">
-    <ul className="menu__lista">
-      <li className="active">
-        <img src="./img/plato_blanco.svg" alt="" />
-        <span>Bebidas</span>
-      </li>
-      <li>
-        <img src="./img/plato_blanco.svg" alt="" />
-        <span>Bebidas</span>
-      </li>
-      <li>
-        <img src="./img/plato_blanco.svg" alt="" />
-        <span>Bebidas</span>
-      </li>
-      <li>
-        <img src="./img/plato_blanco.svg" alt="" />
-        <span>Bebidas</span>
-      </li>
-    </ul>
-  </nav>
-  )
-}
+      <ul className="menu__lista">
+        {categorias.map((cat) => (
+          <li className={`${cat.id===categoriaSel?'active':''}`} key={cat.id}>
+            <img src="../img/plato_blanco.svg" alt="" />
+            <span>{cat.nombre}</span>
+          </li>
+        ))}
+      </ul>
+    </nav>
+  );
+};
 
-export default Sidebar
+export default Sidebar;

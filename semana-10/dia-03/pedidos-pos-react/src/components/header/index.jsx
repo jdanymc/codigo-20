@@ -2,10 +2,10 @@ const Header = () => {
   return (
     <header className="header">
     <div className="header__logo">
-      <img src="./img/logo.svg" alt="" />
+      <img src="../img/logo.svg" alt="" />
     </div>
     <div className="header__buscador">
-      <img src="./img/search.svg" alt="" />
+      <img src="../img/search.svg" alt="" />
       <input type="text" className="header__input" placeholder="Busca un término" />
     </div>
     <div className="header__usuario">

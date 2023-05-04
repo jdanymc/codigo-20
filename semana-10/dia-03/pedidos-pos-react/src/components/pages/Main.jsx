@@ -1,49 +1,16 @@
-import Header from "./components/header"
-import Sidebar from "./components/sidebar"
-const App = () => {
+import Header from "../header"
+import Mesas from "../mesas"
+import Sidebar from "../sidebar"
+
+const Main = () => {
   return (
+    
     <>
       <Header />
   <main className="pos-container">
     <Sidebar/>
     <section className="tabla">
-      <div className="mesas">
-        <ul className="mesas__lista">
-          <li className="mesas__mesa">
-            <span className="mesas__titulo">Mesa</span>
-            <span className="mesas__numero">01</span>
-          </li>
-          <li className="mesas__mesa">
-            <span className="mesas__titulo">Mesa</span>
-            <span className="mesas__numero">02</span>
-          </li>
-          <li className="mesas__mesa activo">
-            <span className="mesas__titulo">Mesa</span>
-            <span className="mesas__numero">02</span>
-          </li>
-          <li className="mesas__mesa">
-            <span className="mesas__titulo">Mesa</span>
-            <span className="mesas__numero">02</span>
-          </li>
-          <li className="mesas__mesa">
-            <span className="mesas__titulo">Mesa</span>
-            <span className="mesas__numero">02</span>
-          </li>
-          <li className="mesas__mesa">
-            <span className="mesas__titulo">Mesa</span>
-            <span className="mesas__numero">02</span>
-          </li>
-          <li className="mesas__mesa">
-            <span className="mesas__titulo">Mesa</span>
-            <span className="mesas__numero">02</span>
-          </li>
-          <li className="mesas__mesa">
-            <span className="mesas__titulo">Mesa</span>
-            <span className="mesas__numero">02</span>
-          </li>
-        </ul>
-        <div className="mesas__info"></div>
-      </div>
+    <Mesas/>
       <div className="pedido">
         <div className="carta">
           <h3>Lista de Platos Categoria: &nbsp; <span className="color-secundario">BEBIDAS</span></h3>
@@ -195,8 +162,9 @@ const App = () => {
       </div>
     </section>
   </main>
+    
     </>
   )
 }
 
-export default App
+export default Main
