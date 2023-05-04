@@ -1,90 +1,36 @@
-import { useForm } from "react-hook-form";
+import { Stepper, Step } from "react-form-stepper";
+import { useState } from "react";
+import Step1 from "./components/step1";
+import Step2 from "./components/step2";
 const App = () => {
-  const {
-    register,
-    handleSubmit,
-    watch,
-    formState: { errors, isValid },
-  } = useForm();
-
-  const onSubmit = (data) => {
-    console.log("data", data);
+  const [stepNumber, setStepNumber] = useState(0);
+  const [form1, setForm1] = useState({
+    firstName: "",
+    lastName: "",
+    selectDocumento: "",
+  });
+  const nextStep = () => {
+    if (stepNumber < 1) {
+      setStepNumber(stepNumber + 1);
+    }
   };
-  console.log("errors", errors);
-
+  const backStep = () => {
+    setStepNumber(stepNumber - 1);
+  };
   return (
     <div className="container">
       <div className="row">
         <div className="col">
-          <div className="card">
-            <div className="card-body">
-              <form onSubmit={handleSubmit(onSubmit)}>
-                <div className="mb-3">
-                  <label htmlFor="input-name" className="form-label">
-                    Nombres
-                  </label>
-                  <input
-                    type="text"
-                    id="input-name"
-                    className={`form-control ${
-                      errors.firstName ? "is-invalid" : ""
-                    }`}
-                    {...register("firstName", {
-                      required: {
-                        value: true,
-                        message: "El nombre es obligatorio",
-                      },
-                      minLength: 3,
-                    })}
-                  />
-                  {errors.firstName && errors.firstName.type === "required" && (
-                    <small className="text-danger">
-                      {errors.firstName.message}
-                    </small>
-                  )}
-                  {errors.firstName &&
-                    errors.firstName.type === "minLength" && (
-                      <small className="text-danger">
-                        Minimo de caracteres 3
-                      </small>
-                    )}
-                </div>
-                <div className="mb-3">
-                  <label htmlFor="input-lastname" className="form-label">
-                    Apellidos
-                  </label>
-                  <input
-                    type="text"
-                    id="input-lastname"
-                    className="form-control"
-                    {...register("lastName")}
-                  />
-                </div>
-                <div className="mb-3">
-                  <label htmlFor="select-documento" className="form-label">
-                    Doc. Identificación:
-                  </label>
-                  <select
-                    name=""
-                    id="select-documento"
-                    className="form-control"
-                    {...register("selectDocumento")}
-                  >
-                    <option value="dni">DNI</option>
-                    <option value="p">Pasaporte</option>
-                    <option value="ce">Carné de Extranjeria</option>
-                  </select>
-                </div>
-                <button
-                  type="submit"
-                  className="btn btn-primary"
-                  //disabled={!isValid}
-                >
-                  Registrar
-                </button>
-              </form>
-            </div>
-          </div>
+          <Stepper activeStep={stepNumber}>
+            <Step label="Paso 1" />
+            <Step label="Paso 2" />
+          </Stepper>
+          {stepNumber === 0 && (
+            <Step1 nextStep={nextStep} form1={form1} setForm1={setForm1} />
+          )}
+          {stepNumber === 1 && (
+            <Step2 backStep={backStep} nextStep={nextStep} />
+          )}
         </div>
       </div>
     </div>
