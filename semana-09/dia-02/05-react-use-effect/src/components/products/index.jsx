@@ -2,7 +2,6 @@ import axios from "axios";
 import { URL_API_STORE } from "../../constants";
 import { useState, useEffect, useContext } from "react";
 import Product from "../product";
-import PropTypes from "prop-types";
 import { UserContext } from "../context/ContextCarrito";
 
 const Products = () => {
